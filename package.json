@@ -1,0 +1,20 @@
+{
+  "name": "bigfiles",
+  "version": "1.0.0",
+  "description": "Streaming CSV generator and aggregator for large datasets",
+  "main": "src/generate.js",
+  "type": "commonjs",
+  "scripts": {
+    "generate": "node src/generate.js",
+    "aggregate": "node src/aggregate.js",
+    "start": "node src/main.js",
+    "auto": "node src/main.js -n 1000000 -s 42 -o invoices.csv -a invoices_agg.csv",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^2.0.5"
+  }
+}
